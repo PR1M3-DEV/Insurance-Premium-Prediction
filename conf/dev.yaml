@@ -1,0 +1,23 @@
+# conf/dev.yaml — local development config
+environment: dev
+log_level: DEBUG
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+
+model:
+  # Identifies which artifacts/metrics.json["winner"] this deployment expects.
+  # Purely informational/traceability — the actual model loaded is always
+  # whatever is in artifacts/model.pkl.
+  expected_version: "v1.0.0"
+
+# Guardrail: predictions outside these bounds get flagged=true in the API
+# response rather than silently returned. Bounds are placeholders based on
+# the training data's premium distribution (p95 ~24,728) pending real
+# business/actuarial limits — loose in dev so nothing gets in the way of
+# testing with unusual inputs.
+sanity_check:
+  enabled: true
+  min_premium: 0
+  max_premium: 500000

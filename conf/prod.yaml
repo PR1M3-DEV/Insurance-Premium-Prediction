@@ -1,0 +1,18 @@
+# conf/prod.yaml — production environment config
+environment: prod
+log_level: WARNING
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+
+model:
+  expected_version: "v1.0.0"
+
+# Tighter bound in prod, still a placeholder pending real business/actuarial
+# limits from underwriting — the point is that a prediction of, say,
+# 2,000,000 gets flagged for manual review rather than silently quoted.
+sanity_check:
+  enabled: true
+  min_premium: 0
+  max_premium: 150000
