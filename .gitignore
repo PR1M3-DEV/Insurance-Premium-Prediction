@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+.env
+logs/*
+!logs/.gitkeep
+*.csv
+!data/holdout_sample.csv
+artifacts/model.pkl
