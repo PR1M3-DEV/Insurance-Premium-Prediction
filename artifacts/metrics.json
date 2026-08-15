@@ -1,0 +1,71 @@
+{
+  "winner": "random_forest",
+  "cv_comparison": {
+    "ridge_regression": {
+      "cv_rmse_mean": 4760.451075697804,
+      "cv_rmse_std": 15.730278963915413,
+      "cv_mae_mean": 2102.222314228715,
+      "cv_mae_std": 5.3828595994259345,
+      "cv_r2_mean": 0.720792807915072,
+      "cv_r2_std": 0.004499505553404667
+    },
+    "random_forest": {
+      "cv_rmse_mean": 3695.804239724115,
+      "cv_rmse_std": 22.328820982595758,
+      "cv_mae_mean": 1499.4424681408673,
+      "cv_mae_std": 7.253169903628952,
+      "cv_r2_mean": 0.831729459416306,
+      "cv_r2_std": 0.0019040135331211034
+    },
+    "hist_gradient_boosting": {
+      "cv_rmse_mean": 3729.633308031496,
+      "cv_rmse_std": 26.29740876208747,
+      "cv_mae_mean": 1531.7986754192862,
+      "cv_mae_std": 8.76049544106657,
+      "cv_r2_mean": 0.8286465330421028,
+      "cv_r2_std": 0.0007193009998742167
+    }
+  },
+  "test_set_comparison": {
+    "ridge_regression": {
+      "rmse": 4798.531172372038,
+      "mae": 2120.930332927434,
+      "r2": 0.725733366170274,
+      "mean_signed_error": -538.8347134825221,
+      "pct_overpriced": 47.12924797756076,
+      "pct_underpriced": 52.87075202243924,
+      "median_abs_pct_error": 25.03472295258605
+    },
+    "random_forest": {
+      "rmse": 3704.1871197610035,
+      "mae": 1529.2478472657394,
+      "r2": 0.8365660903438656,
+      "mean_signed_error": -524.4061244493448,
+      "pct_overpriced": 45.41893995108519,
+      "pct_underpriced": 54.58106004891481,
+      "median_abs_pct_error": 14.193517408366835
+    },
+    "hist_gradient_boosting": {
+      "rmse": 3800.771832470865,
+      "mae": 1563.6806021011905,
+      "r2": 0.8279320703693731,
+      "mean_signed_error": -537.774965190953,
+      "pct_overpriced": 46.26041150011117,
+      "pct_underpriced": 53.73958849988883,
+      "median_abs_pct_error": 15.332460749254064
+    }
+  },
+  "selected_model_test_metrics": {
+    "rmse": 3704.1871197610035,
+    "mae": 1529.2478472657394,
+    "r2": 0.8365660903438656,
+    "mean_signed_error": -524.4061244493448,
+    "pct_overpriced": 45.41893995108519,
+    "pct_underpriced": 54.58106004891481,
+    "median_abs_pct_error": 14.193517408366835
+  },
+  "n_train_rows": 234920,
+  "n_test_rows": 58469,
+  "n_train_vehicles": 119962,
+  "n_test_vehicles": 29991
+}
