@@ -1,0 +1,14 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.git/
+.gitignore
+.env
+*.csv
+tests/
+model_training/
+data/
+logs/
+README.md
+quick_test.py
